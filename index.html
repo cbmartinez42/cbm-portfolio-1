@@ -5,30 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Martinez | Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
+
 <body>
+
     <header>
-        <h1>Chris Martinez</h1>
         <nav>
-            <a href="#about">All About Me</a>
-            <a href="work">My Work</a>
-            <a href="#contact">Contact Info</a>
-            <a href="Resume"></a>
+            <pre>
+                <a href="#about">All About Me</a>
+                <a href="#work">My Work</a>
+                <a href="#contact">Contact Info</a>
+                <a href="#Resume">Resume</a>
+            </pre>
         </nav>
     </header>
 
-    <section class="hero">
-        <div>
-            <h2>Subtitle here</h2>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Chris Martinez</h1>
+            <h2>Welcome to my Portfolio!</h2>
         </div>
     </section>
 
-    <main class="page-wrapper">
-        <section class="page-section">
-            
-        </section>
+    <!-- <main class="page-section"> -->
+    <main>
+        <div class="flex-container">
+            <div id="about">
+                <img class="flex-image" src="./assets/images/beach.jpg" />
+                This is a section for all about me
+            </div>
+        </div>
+        <div class="flex-container">
+            <div id="work">
+            <p>
+                My work info will go here, such as my <a href="https://github.com/cbmartinez42/horiseon_accessible">Refactoring Project</a> and other projects as they are worked. 
+                This will showcase my abilities and knowledge gained as I've worked through and created new items. 
+            </p>
+            <p>    
+                My github profile can be found by clicking the icon here:<a href="https://github.com/cbmartinez42"><img class="logo-dark" src="./assets/images/github-light-32px.png" /></a>
+            </p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div id="resume">
+                My resume or a link to download? We shall see
+            </div>
+        </div>
 
     </main>
 
+    <footer class="footer" id="contact">
+        <p>
+            <h3>email:</h3><h4>cbmartinez42@gmail.com</h4>
+        </p>
+        <p>
+            <h3>phone:</h3><h4>636.575.9922</h4>
+        </p>
+        <p>
+            <h3>linkedin:</h3><a href="https://www.linkedin.com/in/christopher-martinez-6761ba17/"><img class="logo-light" src="./assets/images/1280px-LinkedIn_Logo.png " /></a>
+        </p>
+        <!-- <div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="christopher-martinez-6761ba17"><a class="LI-simple-link" href='https://www.linkedin.com/in/christopher-martinez-6761ba17?trk=profile-badge'>Christopher Martinez</a></div> -->
+    </footer>
 </body>
 </html>
