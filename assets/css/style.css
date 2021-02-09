@@ -1,9 +1,5 @@
-:root {
-
-}
-
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 3px;
   margin: 3px;
   border: none;
@@ -17,13 +13,11 @@ html {
 .nav-flex {
   display: flex;
   justify-content: space-around;
-  border: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
 }
 
 .links {
-  /* border: 1px solid #fff;  For debugging */
   display: flex;
   justify-content: flex-end;
 }
@@ -38,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif; 
   font-size: 36px;
 }
 
@@ -52,7 +46,7 @@ header {
 }
 
 .hero-image {
-    height: 400px;
+    height: 300px;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -74,7 +68,7 @@ header {
   }
 
 .main-container {
-  margin: 10px 0;
+  margin: 10px;
   margin-left: 10px;
   padding: 15px;
   display: flex;
@@ -90,9 +84,10 @@ header {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgb(3, 3, 3), rgb(15, 15, 126));
-  border:  rgb(129, 129, 252) solid;
+  border:  rgb(39, 39, 170) solid;
   border-radius: 10%;
-  max-width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(33, 44, 185, 0.925), 0 6px 20px 0 rgba(3, 27, 243, 0.842);
+  /* max-width: 50%; */
 }
 
 .flex-image {
@@ -100,7 +95,7 @@ header {
 }
 
 .projects {
-  margin: 10px 0;
+  margin: 20px 0;
   margin-left: 10px;
   padding: 15px 0;
   display: flex;
@@ -110,14 +105,17 @@ header {
 }
 
 .project-item {
+  padding: 10px;
+  margin: 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  border: 2px solid rgb(100, 139, 100);
+  border: 2px solid rgb(29, 107, 29);
   background-image: linear-gradient(rgb(3, 3, 3), rgb(15, 15, 126));
   border-radius: 10%;
   max-width: 25%;
+  box-shadow: 0 4px 8px 0 rgba(10, 121, 56, 0.925), 0 6px 20px 0 rgba(4, 75, 7, 0.938);
 }
 
 .screenshot {
@@ -160,4 +158,34 @@ footer {
 .footer h4 {
   font-size: 14px;
   color: grey;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  .flex-item {
+    max-width: 50%;
+  }
+  .main-container {
+    max-width: 50%;
+  }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+  .flex-item {
+    max-width: 100%;
+  }
+  .main-container {
+    max-width: 100%;
+  }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  .flex-item {
+    max-width: 100%;
+  }
+  .main-container {
+    max-width: 100%;
+  }
 }
