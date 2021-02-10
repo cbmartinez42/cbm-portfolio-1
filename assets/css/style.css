@@ -69,11 +69,13 @@ header {
 
 .main-container {
   margin: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   padding: 15px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  border: none;
+  /* border: none; */
   font-family: Arial, Helvetica, sans-serif; 
 }
 
@@ -83,11 +85,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 50%;
   background-image: linear-gradient(rgb(3, 3, 3), rgb(15, 15, 126));
   border:  rgb(39, 39, 170) solid;
   border-radius: 10%;
   box-shadow: 0 4px 8px 0 rgba(33, 44, 185, 0.925), 0 6px 20px 0 rgba(3, 27, 243, 0.842);
   /* max-width: 50%; */
+}
+
+#work {
+  flex-direction: column;
 }
 
 .flex-image {
@@ -97,8 +104,10 @@ header {
 .projects {
   margin: 20px 0;
   margin-left: 10px;
-  padding: 15px 0;
+  padding: 15px;
   display: flex;
+  flex: 100%;
+  flex-direction: row;
   justify-content: space-around;
   border: none;
   font-family: Arial, Helvetica, sans-serif; 
@@ -132,6 +141,7 @@ footer {
   background-color: white;
   border-radius: unset;
 }
+
 .logo-dark {
   max-width: 50px;
   border: none;
@@ -142,9 +152,9 @@ footer {
 .footer {
   padding: 30px;
   clear: both;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   text-align: center;
-  flex: none;
+  /* flex: none; */
   width: 100%;
   display: block;
 }
@@ -160,32 +170,36 @@ footer {
   color: grey;
 }
 
-/* Tablets - header changes color */
+/* Tablets  */
 @media screen and (max-width: 992px) {
-  .flex-item {
-    max-width: 50%;
-  }
   .main-container {
-    max-width: 50%;
+    flex-direction: row;
+  }
+  
+  .flex-item {
+    flex: 50%;
   }
 }
 
-/* Large smartphones - navbar changes color */
+/* Large smartphones */
 @media screen and (max-width: 768px) {
-  .flex-item {
-    max-width: 100%;
+    .main-container {
+    flex-direction: column;
   }
-  .main-container {
-    max-width: 100%;
+  
+  .flex-item {
+    flex: 100%
   }
 }
 
-/* Small smartphones - image placeholders change color */
+/* Small smartphones  */
 @media screen and (max-width: 576px) {
-  .flex-item {
-    max-width: 100%;
-  }
   .main-container {
-    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .flex-item {
+    /* max-width: 100%; */
+    flex: 100%;
   }
 }
