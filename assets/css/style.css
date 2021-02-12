@@ -220,7 +220,7 @@ footer {
 @media screen and (max-width: 768px) {
  
   .nav-flex {
-    font-size: 1em;
+    font-size: .75em;
   }
   .main {
     flex-direction: column;
@@ -250,10 +250,4 @@ footer {
     height: 550px;
   }
 
-  .screenshot {
-    image-rendering: -webkit-optimize-contrast;
-    height: 300px;
-    width: auto;
-    object-fit: cover;
-  }
 }
