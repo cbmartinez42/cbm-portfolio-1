@@ -1,7 +1,7 @@
 * {
   padding: 3px;
   margin: 3px;
-  color: var(--darkgry);
+  color: var(--lightgry);
 }
 
 /* setting variable colors for fonts */
@@ -10,6 +10,9 @@
   --darkgry: rgb(112, 111, 111);
 }
 
+a {
+  color: var(--darkgry);
+}
 /* set a hover option for links throughout the page to turn blue with a border radius */
 a:hover {
   background-color: rgb(3, 27, 243);
@@ -40,6 +43,11 @@ h1 {
 h2 {
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 1.5em;
+}
+
+h3 {
+  color: var(--darkgry);
+  font-size: 18px;
 }
 
 .main {
@@ -85,6 +93,17 @@ header {
   font-family: Arial, Helvetica, sans-serif; 
 }
 
+span {
+  display: contents;
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+span:hover {
+  background-color: var(--darkgry);
+}
+
 /* set flex-items to take half the page at full display with blue borders to differentiate */
 .flex-item {
   margin: 15px;
@@ -109,6 +128,8 @@ header {
 
 figcaption {
   text-align: center;
+  color: var(--darkgry);
+  font-style: italic;
 }
 
 /* values for first project so that it appears larger than the rest */
@@ -144,7 +165,6 @@ figcaption {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 0;
   flex-wrap: wrap;
   color: var(--lightgry);
   border: 2px solid rgb(29, 107, 29);
