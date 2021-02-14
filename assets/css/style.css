@@ -17,7 +17,7 @@ a {
 
 /* set a hover option for links throughout the page to turn blue with a border radius */
 a:hover {
-  background-color: rgb(3, 27, 243);
+  background-color: rgb(25, 78, 101);
   border-radius: 5%;
 }
 
