@@ -5,7 +5,7 @@ This is an original application with the intent of showcasing my work to prospec
 
 Included in this application are:
 * HTML code utilizing semantic elements to optimize for accessibility
-    * Utilized `<header>`', `<footer>` and `<nav>` elements to easily distinguish from the rest of the body 
+    * Utilized `<header>`, `<footer>` and `<nav>` elements to easily distinguish from the rest of the body 
     * Utilized `<section>`, `<figure>` and `<figcaption>` to more easily identify main items as well as images
     * Implimented `alt` attribute for images to improve accessibility as well 
 * Utilized efficient CSS code
@@ -25,6 +25,7 @@ Many thanks to the below individuals who provided input and suggestions
 * Riheel Hamoande
 * Mim Armand
 * Stephen Simone
+* Katie Martinez *(I'm colorblind, and she was instrumental in toning down my color scheme!!)*
 
 
 If any additional issues are found, or if there are any suggestions for improvement, please send an email to site developer Chris Martinez at cbmartinez42@gmail.com
