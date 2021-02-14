@@ -7,8 +7,8 @@
 /* setting variable colors for fonts */
 :root {
   --primary: rgb(179, 172, 172);
-  --secondary: rgb(112, 111, 111);
-  --tertiary: darkslategrey;
+  --secondary: rgb(160, 157, 157);
+  --tertiary: rgb(70, 68, 68);
 }
 
 a {
@@ -117,9 +117,9 @@ span:hover {
   flex-direction: column;
   color: var(--primary);
   background-color: var(--tertiary);
-  border:  rgb(39, 39, 170) solid;
+  border:  rgb(71, 71, 105) solid;
   border-radius: 5%;
-  box-shadow: 0 4px 8px 0 rgba(33, 44, 185, 0.925), 0 6px 20px 0 rgba(3, 27, 243, 0.842);
+  box-shadow: 0 4px 8px 0 rgba(57, 57, 97, 0.925), 0 6px 20px 0 rgba(82, 88, 140, 0.842);
 }
 
 .flex-image {
@@ -145,14 +145,29 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid rgb(29, 107, 29);
-  background-image: linear-gradient(rgb(3, 3, 3), rgb(15, 15, 126));
+  border: 2px solid rgb(28, 39, 28);
+  background-color: rgba(105, 107, 119, 0.29);
   border-radius: 5%;
   color: var(--lightgry);
   max-width: 60%;
-  box-shadow: 0 4px 8px 0 rgba(10, 121, 56, 0.925), 0 6px 20px 0 rgba(4, 75, 7, 0.938);
+  box-shadow: 0 4px 8px 0 rgba(43, 62, 51, 0.16), 0 6px 20px 0 rgba(37, 60, 38, 0.86);
 }
 
+.screenshot-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: grey;
+  background-color: black;
+  padding: 1em;
+  border-radius: 13%;
+}
 .projects {
   margin: 20px 0;
   display: flex;
@@ -169,10 +184,10 @@ figcaption {
   align-items: center;
   flex-wrap: wrap;
   color: var(--primary);
-  border: 2px solid rgb(29, 107, 29);
-  background-image: linear-gradient(rgb(3, 3, 3), rgb(15, 15, 126));
+  border: 2px solid rgb(28, 39, 28);
+  background-color: rgba(105, 107, 119, 0.29);
   border-radius: 5%;
-  box-shadow: 0 4px 8px 0 rgba(10, 121, 56, 0.925), 0 6px 20px 0 rgba(4, 75, 7, 0.938);
+  box-shadow: 0 4px 8px 0 rgba(43, 62, 51, 0.16), 0 6px 20px 0 rgba(37, 60, 38, 0.86);
 }
 
 .screenshot {
